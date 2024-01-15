@@ -15,7 +15,7 @@ try {
     // Create a keypair from the secret key
     const keypair = Keypair.fromSecretKey(secretKeyUint8Array);
 
-    console.log(`Secret key loaded successfully from .env`);
+    console.log(`Secret key loaded successfully from .env`, keypair);
     // Now 'keypair' contains the loaded keypair, and you can use it in your code.
 } catch (error) {
     console.error(`Error loading secret key: ${error.message}`);
