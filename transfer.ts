@@ -5,7 +5,7 @@ dotenv.config();
 
 
 try {
-    //to generate keypair
+    //to load keypair from .env file
     const secretKeyArray = JSON.parse(process.env.SECRET_KEY as string);
     const secretKeyUint8Array = new Uint8Array(secretKeyArray);
     const SenderKeyPair = Keypair.fromSecretKey(secretKeyUint8Array);
